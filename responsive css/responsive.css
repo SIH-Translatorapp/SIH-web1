@@ -1,0 +1,35 @@
+@media (max-width:1500px) {
+    .cardContainer .card{
+        flex-basis: 33.3%;
+        background-color: #FF6422;
+    }
+    body{
+        --font-size:25px
+    }
+}
+@media (max-width:1000px) {
+    .cardContainer .card{
+        flex-basis: 50%;
+        background-color: #FF6422;
+    }
+    body{
+        --font-size:25px
+    }
+    
+}
+@media (max-width:600px) {
+    .cardContainer .card{
+        flex-basis: 100%;
+        background-color: #FF6422;
+    }
+    .navbar .center{
+        display: none;
+    }
+    .navbar .navright a{
+        display: none;
+    }
+    .burger{
+        display: block;
+        font-size: 35px;
+    }
+}
