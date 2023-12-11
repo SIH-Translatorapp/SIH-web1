@@ -6,21 +6,26 @@
     <title>Translator</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/responsive css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
 </head>
 <body>
+    <div class="loader">
+        <h3>Translator....</h3>
+    </div>
     <div id="main">
         <div class="navbar">
             <div class="navleft">
                 <h2>Translator</h2>
             </div>
             <div class="center">
-                <a href="#">Home</a>
-                <a href="#">Home</a>
-                <a href="#">Home</a>
-                <a href="#">Home</a>
+                <a href="#" class="magnet">Home</a>
+                <a href="#" class="magnet">About</a>
+                <a href="./components/cards.html" class="magnet">Team</a>
+                <a href="#" class="magnet">Contact Us</a>
             </div>
             <div class="navright">
-                <a href="https://github.com" target="_blank">
+                <a href="https://github.com" class="magnet" target="_blank">
                     <i class="ri-github-fill"></i>
                 </a>
             </div>
@@ -28,7 +33,28 @@
         <div id="page1">
             <h1>You say,</h1><br>
             <h1>we Translate</h1>
+            <div class="btn">
+                <a href="#" class="magnet">
+                    <h2>lets Translate</h2>
+                    <i class="ri-arrow-right-fill"></i> 
+                </a>
+            </div>
         </div>
     </div>
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- <script  type="text/javascript"  src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sheryjs@1.0.0-beta.0.0.8/dist/Shery.min.js"></script> -->
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+    <script src="script.js"></script>
 </body>
 </html>
