@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    --headfont-size: 30px;
+    --linkfont-size:20px;
+    
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: #333;
+    animation: laoderanimation 1.5s ease-in forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.loader h3{
+ color: aliceblue;
+ font-size: 5vw;
+}
+@keyframes laoderanimation {
+    from{
+        top: 0;
+    }
+    to{
+        top: 100%;
+    }
+}
+#main{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #FF6422;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navleft{
+    /* width: 10%; */
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+}
+.navbar .navleft h2{
+    /* border: 2px #000 solid; */
+    font-size: var(--headfont-size);
+} 
+.navbar .center{
+    display: flex;
+}
+.navbar .center a{
+    font-size: calc(var(--headfont-size)/2);
+    font-weight: 500;
+    margin: 2vw;
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar .navright{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.burger{
+    /* font-size: 30px; */
+    display: none;
+}
+.navbar .navright a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar .navright a i{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/* Menu  */
+
+.menu{
+    position: fixed;
+    z-index: 10;
+    width: 10%;
+    height: 100vh;
+}
+
+
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#page1 h1{
+    position: relative;
+    left: 8vw;
+    top: 5vw;
+    font-size: 13vw;
+    line-height: 1;
+    text-transform: capitalize;
+    -webkit-text-stroke: 2.5px black;
+    background-color: transparent;
+    color: aliceblue;
+    /* letter-spacing: -; */
+}
+#page1 .btn{
+    position: relative;
+    top: 8vw;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #FF6422; */
+}
+#page1 .btn a{
+    height: 100px;
+    width: 250px;
+    margin-right: 8vw;
+    border: 2px #333 solid;
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+    color: black;
+}
+#page1 .btn a h2{
+    text-transform: capitalize;
+    font-size: 1.3vw;
+    letter-spacing: 0;
+}
+#page1 .btn a i{
+    font-size: 1.5vw;
+}
+
+
+
+/* Team  */
+
+
+.cardContainer{
+    width: 100%;
+    background-color: rgb(197, 213, 227);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* gap: 100px; */
+}
+.cardContainer .cardwrraper{
+    /* width: 17%; */
+    height: 400px;
+    /* padding: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+}
+.cardContainer .card{
+    /* border: 2px #000 solid; */
+    padding: 20px;
+    flex-basis: 20%;
+}
+.cardContainer .card .cardimage{
+    width: 100%;
+    height: 200px;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.cardContainer .card .cardimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardContainer .card .cardName{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;align-items: center;
+}
+.cardContainer .card .cardName h2{
+    font-size: 30px;
+}
+.cardContainer .card .cardName h5{
+    font-weight: 500;
+    margin-top: 1vw;
+    /* margin-left: 2vw; */
+}
+.cardContainer .card .socialLinks{
+    /* margin: vw; */
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.cardContainer .card .socialLinks a{
+    margin: 0.5vw;
+    text-decoration: none;
+    color: #333;
+}
+.cardContainer .card .socialLinks i{
+    font-size: 30px;
+}
