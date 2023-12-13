@@ -9,7 +9,7 @@
 body,html{
     width: 100%;
     height: 100%;
-    background-color: rgb(197, 213, 227);
+    background-color: aliceblue;
     --headfont-size: 30px;
     --linkfont-size:20px;
     --content:100ch;

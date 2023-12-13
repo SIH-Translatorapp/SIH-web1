@@ -10,8 +10,8 @@ function bttnAnimation(){
         // stagger:0.3
 })}
 function navAnimation(){
-    gsap.from('.navbar',{
-        y:'-100%',
+    gsap.from('.hide',{
+        y:-100,
         opacity:0,
         delay:1,
         duration:0.3
@@ -43,6 +43,20 @@ function h1Animation(){
         duration:0.5,    
         stagger:0.3
     })}
+const sliderItem = document.querySelector('.text-child');
+const fileslide = document.querySelector('.file')
+const textslide = document.querySelector('.text')
+
+// Add a click event listener to move the slider
+textslide.addEventListener('click', () => {
+    // Move the slider to a new position (you can adjust the left value)
+    sliderItem.style.left = '-50px'; // Set to the desired left position
+});
+fileslide.addEventListener('click', () => {
+    sliderItem.style.left = '210px';
+    sliderItem.style.color = "red";
+    console.log(sliderItem)
+})
 cardAnimation();
 navAnimation();
 bttnAnimation();
