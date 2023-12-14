@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="loader">
-        <h3>Contact US......</h3>
+        <h3>About Us......</h3>
     </div>
     <nav class="hide">
         <div class="container nav__container">
@@ -26,9 +26,9 @@
             </div></a>
             <ul class="nav__menu">
                 <li class="magnet"><a href="../components/index.html">Home</a></li>
-                <li class="magnet"><a href="../components/about.html">About</a></li>
+                <li class="magnet" id="current_page"><a href="../components/about.html">About</a></li>
                 <li class="magnet"><a href="../components/cards.html">Team</a></li>
-                <li class="magnet" id="current_page"><a href="../components/Contact.html">Contact</a></li>
+                <li class="magnet"><a href="../components/Contact.html">Contact</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -36,43 +36,7 @@
     </nav>
     <section class="contact">
 
-        <div class="container contact__container">
-            <aside class="contact__aside">
-                <div class="aside__image">
-                <img src="../Images/contact.svg">
-            </div>
-            <h2>Contact Us</h2>
-            <p>If you have any queries, please reach out to us, we will try our best to help:</p>
-            <ul class="contact__details">
-                <li>
-                    <i class="uil uil-envelope-alt"></i>
-                    <h5><a href="mailto:culturalstudy.society@study.iitm.ac.in">Mail Raiders</a></h5>
-                </li>
-                <li>
-                    <i class="uil uil-location-point"></i>
-                        <h5>Chennai, India</h5>
-                </li>
-            </ul>
-            <ul class="contact__socials">
-                <li>
-                <a href="https://www.instagram.com/synapse_iitmbs/" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/mwlite/company/synapse-the-socio-linguistic-society" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></li>
-                <li><a href="https://youtube.com/@SynapseIITM"><i class="uil uil-youtube" target="_blank" rel="noopener noreferrer"></i></a></li>
-                <li><a href="https://twitter.com/synapse_iitmbs" target="_blank" rel="noopener noreferrer"><i class="uil uil-twitter"></i></a></li>
-            </ul>   
-            </aside>
-
-            <form action="https://formspree.io/f/xeqbydkz" method="POST" class="contact__form">
-                <div class="form__name">
-                    <input type="text" name="First Name" placeholder="First Name" required>
-                    <input type="text" name="Last Name" placeholder="Last Name" required>
-                </div>
-                <input type="email" name="Email Address" placeholder="Your Email" required>
-                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
-                <button type="submit" class="btn btn-primary magnet">Send Message</button>
-            </form>
-            </div>
-    </section>
+        
  <!--  Gsap is needed for Basic Effects -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -87,6 +51,6 @@
  <!-- <script  type="text/javascript"  src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script> -->
  <!-- <script src="https://cdn.jsdelivr.net/npm/sheryjs@1.0.0-beta.0.0.8/dist/Shery.min.js"></script> -->
  <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
- <script src="/Javascript/script.js"></script>
+ <script src="/script.js"></script>
 </body>
 </html>
