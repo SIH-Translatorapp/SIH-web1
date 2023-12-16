@@ -57,7 +57,52 @@ fileslide.addEventListener('click', () => {
     sliderItem.style.color = "red";
     console.log(sliderItem)
 })
+function sliderAnimation(){
+    gsap.from('.slider',{
+        y:100,
+        opacity:0,
+        delay:1,
+        duration:0.6
+    })
+}
+function inputCardAnimation(){
+    gsap.from('.slider',{
+        y:100,
+        opacity:0,
+        delay:0.5,
+        duration:0.6
+    })
+}
+function inputBoxAnimationm(){
+    gsap.from('.input-container',{
+        x:-100,
+        opacity:0,
+        delay:0.8,
+        duration:0.6
+    })
+}
+function inputBoxAnimationm2(){
+    gsap.from('.input-container2',{
+        x:100,
+        delay:0.8,
+        opacity:0,
+        duration:0.6
+    })
+}
+function translateButtonAnimation(){
+    gsap.from('#btn-container',{
+        // y:100,
+        delay:0.8,
+        duration:0.8,
+        // opacity:0,
+        scale:0
+    })
+}
+translateButtonAnimation();
 cardAnimation();
 navAnimation();
 bttnAnimation();
-h1Animation();
+sliderAnimation();
+// h1Animation();
+inputBoxAnimationm();
+inputBoxAnimationm2();
