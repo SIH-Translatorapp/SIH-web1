@@ -133,6 +133,11 @@ dropdowns.forEach(dropdown => {
         });
     });
 });
+
+
+
+
+
 dropDownAnimation();
 translateButtonAnimation();
 cardAnimation();
